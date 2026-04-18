@@ -28,6 +28,31 @@ Projenin modern ve kullanıcı dostu arayüzüne ait görseller aşağıdadır:
 * **Yazılım:** Flutter / C# .NET
 * **Tasarım:** Modern UI/UX yaklaşımı ile geliştirilmiş mobil arayüz.
 
+* ## 🔌 Donanım ve Devre Yapısı
+
+Sense-Route projesinin IoT sensör modülü, çöp konteynerlerinin doluluk oranını ve kapak durumunu anlık olarak takip edecek şekilde tasarlanmıştır. Sistemin temelini düşük maliyetli ve yüksek WiFi performanslı **ESP8266** WiFi modülü oluşturmaktadır.
+
+### Devre Şeması (Şablonu)
+
+Aşağıdaki şemada, sensör modülünün bağlantı yapısı ve veri akış yönleri detaylandırılmıştır:
+
+![Sense-Route Devre Şeması](path_to_images/devre.png)
+
+### Donanım Bileşenleri ve Çalışma Mantığı
+
+Devre şemasında görüldüğü üzere sistem şu bileşenlerden oluşmaktadır:
+
+* **ESP8266 WiFi Modülü (MCU):** Sistemin ana beyni. Sensörden veri alır, MQTT protokolü ile buluta iletir.
+* **A.Ş.E. (Ultrasonik Mesafe Sensörü) -> `Ultrasonik_Sensor`**: Konteyner kapağına yerleştirilir. Çöpün tabanına bakacak şekilde ultrasonik ses dalgaları göndererek mesafeyi ölçer. Bu veri, doluluk oranını belirlemek için kullanılır.
+* **`Kapak_Durum_Sensoru`:** Kapak açılma durumunu takip eden dijital bir sensör (Örn: Manyetik veya ivmeölçer). Kapak açıldığında anlık bildirim göndererek güvenliği sağlar.
+* **Enerji Yönetimi -> `DC_Power_Block`:** Sistemin enerji ihtiyacını sağlayan güç bloğu.
+
+### Veri Akışı
+1.  Sensörler (`Mesafe` ve `Kapak`) verileri ESP8266'ya iletir.
+2.  ESP8266, verileri işler.
+3.  Veriler, MQTT protokolü üzerinden yayınlanır (`MQTT_Publish`).
+4.  Bu veriler buluta (`MQTT_Broker`) iletilerek mobil uygulamada görüntülenir.
+
 ## 🔒 Lisans
 
 Bu proje **Creative Commons Zero v1.0 Universal** lisansı ile sunulmaktadır. Kaynak kodları fikri mülkiyet hakları gereği kapalı tutulmaktadır. Teknik detaylar için LinkedIn üzerinden iletişime geçebilirsiniz.
