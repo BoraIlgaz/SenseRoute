@@ -17,7 +17,7 @@ Projenin modern ve kullanıcı dostu arayüzüne ait görseller aşağıdadır:
 ## 🚀 Öne Çıkan Özellikler
 
 * **Gerçek Zamanlı Takip:** ESP8266 WiFi modülü ve mesafe sensörleri aracılığıyla çöp kutularının doluluk oranlarını ve kapak durumlarını anlık izleme.
-* **Akıllı Rota:** Harita üzerinde, sokak verilerini baz alarak en yakın dolu kutuya giden en kısa yolu hesaplama.
+* **Akıllı Rota:** Harita üzerinde sokak verilerini baz alarak en yakın dolu kutuya giden en kısa yolu hesaplama.
 * **Güvenlik Mekanizması:** Kapak açılması gibi durumlarda anlık bildirim sistemi ile operasyonel güvenlik sağlama.
 * **Oyunlaştırma (Gamification):** Personel motivasyonunu artırmak için mesafe bazlı puanlama ve liderlik tablosu sistemi.
 
