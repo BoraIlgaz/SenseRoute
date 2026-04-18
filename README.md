@@ -1,22 +1,33 @@
 # 🗑️ Sense-Route: Akıllı Atık Yönetimi ve Rota Optimizasyonu
 
-**Sense-Route**, şehir temizlik operasyonlarını optimize etmek ve personelin verimliliğini artırmak amacıyla geliştirilmiş, IoT destekli bir mobil uygulama ekosistemidir.
+**Sense-Route**, şehir temizlik operasyonlarını optimize etmek için IoT ve mobil uygulama teknolojilerini birleştiren yenilikçi bir çözümdür. 
 
-## 🚀 Proje Amacı
-Temizlik görevlilerinin boş çöp kutularıyla zaman kaybetmesini önleyerek, onları gerçek zamanlı doluluk verileri doğrultusunda en yakın dolu konteynerlere yönlendirmek.
+## 📱 Uygulama Arayüzü
 
-## 🛠️ Teknik Özellikler
-* **IoT Sensör Modülü:** Çöp kutusu kapaklarına yerleştirilen mesafe sensörleri ile doluluk ölçümü.
-* **Güvenlik Mekanizması:** Kapağın açılma durumunu takip eden ve sistemin sağlıklı çalışmasını doğrulayan anlık bildirim sistemi.
-* **Akıllı Rota:** Gerçek dünya haritası üzerinde, sokak verilerini baz alarak oluşturulan en kısa yol optimizasyonu.
-* **Oyunlaştırma (Gamification):** Uzaklık bazlı puanlama sistemi (max 150 puan) ve personeller arası liderlik tablosu ile yüksek motivasyon.
+Projenin modern ve kullanıcı dostu arayüzüne ait görseller aşağıdadır:
 
-## 🏗️ Kullanılan Teknolojiler
-* **Donanım:** ESP8266 WiFi Modülü
-* **Haberleşme:** MQTT Protokolü (Gerçek zamanlı ve düşük güç tüketimli veri iletimi)
-* **Yazılım:** Flutter / C# .NET (Mobil uygulama ve backend yapısı)
+| Giriş Ekranı | Harita & Bildirim | Çöp Kutusu Detay |
+| :---: | :---: | :---: |
+| ![Login Page](Screenshots/Login_Page.png) | ![Map Notification](Screenshots/MapNotification_Page.png) | ![Trashcan Detail](Screenshots/Trashcan-Detail.png) |
 
-## 🔒 Lisans ve Kaynak Kodu
-Bu projenin kaynak kodları, fikri mülkiyet hakları gereği kapalı tutulmaktadır. Teknik detaylar ve dokümantasyon için repo içeriğini inceleyebilir veya LinkedIn üzerinden iletişime geçebilirsiniz.
+| Uygulama Menüsü | Liderlik Tablosu | Profil Sayfası |
+| :---: | :---: | :---: |
+| ![App Menu](Screenshots/Hamburger_Menu.png) | ![Leaderboard](Screenshots/Leaderboard_Page.png) | ![Profile Page](Screenshots/Profile_Page.png) |
 
-**Lisans:** [Creative Commons Zero v1.0 Universal](LICENSE)
+## 🚀 Öne Çıkan Özellikler
+
+* **Gerçek Zamanlı Takip:** ESP8266 WiFi modülü ve mesafe sensörleri aracılığıyla çöp kutularının doluluk oranlarını ve kapak durumlarını anlık izleme.
+* **Akıllı Rota:** Harita üzerinde, sokak verilerini baz alarak en yakın dolu kutuya giden en kısa yolu hesaplama.
+* **Güvenlik Mekanizması:** Kapak açılması gibi durumlarda anlık bildirim sistemi ile operasyonel güvenlik sağlama.
+* **Oyunlaştırma (Gamification):** Personel motivasyonunu artırmak için mesafe bazlı puanlama ve liderlik tablosu sistemi.
+
+## 🛠️ Teknik Altyapı
+
+* **Donanım:** ESP8266, Ultrasonik Mesafe Sensörü
+* **Haberleşme:** MQTT Protokolü (Topic: `mesafe3`)
+* **Yazılım:** Flutter / C# .NET
+* **Tasarım:** Modern UI/UX yaklaşımı ile geliştirilmiş mobil arayüz.
+
+## 🔒 Lisans
+
+Bu proje **Creative Commons Zero v1.0 Universal** lisansı ile sunulmaktadır. Kaynak kodları fikri mülkiyet hakları gereği kapalı tutulmaktadır. Teknik detaylar için LinkedIn üzerinden iletişime geçebilirsiniz.
