@@ -44,8 +44,6 @@ Devre şemasında görüldüğü üzere sistem şu bileşenlerden oluşmaktadır
 
 * **ESP8266 WiFi Modülü (MCU):** Sistemin ana beyni. Sensörden veri alır, MQTT protokolü ile buluta iletir.
 * **A.Ş.E. (Ultrasonik Mesafe Sensörü) -> `Ultrasonik_Sensor`**: Konteyner kapağına yerleştirilir. Çöpün tabanına bakacak şekilde ultrasonik ses dalgaları göndererek mesafeyi ölçer. Bu veri, doluluk oranını belirlemek için kullanılır.
-* **`Kapak_Durum_Sensoru`:** Kapak açılma durumunu takip eden dijital bir sensör (Örn: Manyetik veya ivmeölçer). Kapak açıldığında anlık bildirim göndererek güvenliği sağlar.
-* **Enerji Yönetimi -> `DC_Power_Block`:** Sistemin enerji ihtiyacını sağlayan güç bloğu.
 
 ### Veri Akışı
 1.  Sensörler (`Mesafe` ve `Kapak`) verileri ESP8266'ya iletir.
