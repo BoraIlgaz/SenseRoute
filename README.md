@@ -24,7 +24,7 @@ Projenin modern ve kullanıcı dostu arayüzüne ait görseller aşağıdadır:
 ## 🛠️ Teknik Altyapı
 
 * **Donanım:** ESP8266, Ultrasonik Mesafe Sensörü
-* **Haberleşme:** MQTT Protokolü (Topic: `mesafe3`)
+* **Haberleşme:** MQTT Protokolü
 * **Yazılım:** Flutter / C# .NET
 * **Tasarım:** Modern UI/UX yaklaşımı ile geliştirilmiş mobil arayüz.
 
