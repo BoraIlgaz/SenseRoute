@@ -36,7 +36,7 @@ Sense-Route projesinin IoT sensör modülü, çöp konteynerlerinin doluluk oran
 
 Aşağıdaki şemada, sensör modülünün bağlantı yapısı ve veri akış yönleri detaylandırılmıştır:
 
-![Sense-Route Devre Şeması](path_to_images/devre.png)
+![Sense-Route Devre Şeması](Screenshots/devre.png)
 
 ### Donanım Bileşenleri ve Çalışma Mantığı
 
